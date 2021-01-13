@@ -26,7 +26,7 @@ describe( 'Counter', () => {
 
 	test( 'the decrement button decreases the current count', () => {
 		const { getByTestId, getByText } = render(
-			<Counter initialCount={25} />
+			<Counter initial={25} />
 		);
 
 		expect(getByTestId('current-count').textContent).toBe('25');
